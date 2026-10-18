@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <section className="relative bg-paper lg:pt-2" aria-labelledby="home-hero-title">
-        <Container className="px-0 sm:px-5 lg:px-8">
+        <Container className="px-4 sm:px-5 lg:px-8">
           <div className="hero-stage relative isolate overflow-hidden bg-[#efe5d8]">
             <div aria-hidden="true" className="hero-photograph absolute inset-0">
               <img
@@ -50,7 +50,7 @@ export default function Home() {
                   Matcha, handmade sweets and unhurried mornings. A warm little escape inspired by Kyoto.
                 </p>
 
-                <Link to="/menu" className="hero-enter hero-enter-4 button-dark mt-8 gap-5">
+                <Link to="/menu" className="hero-enter hero-enter-4 button-dark mt-[243px] gap-5 sm:mt-8">
                   Explore our menu
                   <ArrowRight size={17} aria-hidden="true" />
                 </Link>
@@ -86,7 +86,7 @@ export default function Home() {
             </Reveal>
 
             <div className={`
-              no-scrollbar -mx-6 mt-7 flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-2
+              no-scrollbar mx-0 mt-7 flex snap-x snap-mandatory gap-4 overflow-x-auto px-0 pb-2
               sm:mx-0 sm:grid sm:grid-cols-2 sm:gap-6 sm:overflow-visible sm:px-0 lg:grid-cols-4
             `}>
               {featuredProducts.map((product, index) => (
